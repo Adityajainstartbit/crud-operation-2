@@ -1,13 +1,18 @@
- <% if  @article.errors.any? %>
- <h1>the following mistake prevent us to save</h1>
- <ul>
+  
+  <% if  @article.errors.any? %>
+ <div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">the following mistake prevent us to save<</h4>
+  <ul>
  <% @article.errors.full_messages.each do |msg| %>
  <li><%= msg %></li>
  <% end %>
- <ul>	
+ <ul>   
+  
+</div>
+ 
   
 <% end %>
-<%= form_with(modal: @article, local: true) do |f| %>
+<%= form_with(modal: @a, local: true) do |f| %>
 <p>
 	<%= f.label :title %><br>
 	<%= f.text_field :title %>

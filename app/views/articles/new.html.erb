@@ -6,16 +6,13 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<h1>creating a article</h1> 
- <% if  @article.errors.any? %>
- <h1>the following mistake prevent us to save</h1>
- <ul>
- <% @article.errors.full_messages.each do |msg| %>
- <li><%= msg %></li>
- <% end %>
- <ul>	
-  
-<% end %>
+<body>
+	<div class="container mb-5">
+		<div id="page-content">
+
+ <%= render 'shades/error' %>
+
+</div>
 <%= form_with scope: :article, 	 url: articles_path, local: true do |f| %>
 <p>
 	<%= f.label :title %><br>
@@ -38,6 +35,6 @@
 
  <% end %>
 
-
+</div>
 
 <body>

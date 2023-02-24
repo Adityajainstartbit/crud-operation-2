@@ -1,10 +1,12 @@
+<div class="container">
 <h1>show articles</h1>
 
 <p><strong>Title: </strong><%= @article.title %></p>
 <p><strong>Description: </strong><%= @article.description %> </p>
-<%= link_to 'Create',new_article_path %> |
-<%= link_to 'Back',articles_path %> |
-<%= link_to 'Edit',edit_article_path(@article) %> |
-<%= link_to 'delete',article_path(@article), method: :delete, data:{ confirm: "data will be deleted"} %>
 
+<%= link_to 'Create',new_article_path, class: "btn btn-success" %> 
+<%= link_to 'Back',articles_path,class: "btn btn-primary" %> 
+<%= link_to 'Edit',edit_article_path(@article), class: "btn btn-warning"%> 
+<%= link_to 'delete',article_path(@article), method: :delete, data:{ confirm: "data will be deleted"}, class: "btn btn-danger"%>
 
+</div>

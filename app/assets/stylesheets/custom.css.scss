@@ -1,0 +1,53 @@
+@import 'bootstrap/dist/css/bootstrap';
+.navbar {
+
+background-color: #FDF6EA !important;
+
+}
+.jumbotron
+{
+margin-top:15px;
+margin-bottom: 95px;
+	background-image: asset-url('article.jpg');
+	background-position: center,center;
+	background-repeat: no-repeat;
+
+}
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  flex: 1 1 1px;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background:#808080;
+  background: linear-gradient(to right, #b2b9c3, #4e5254);
+}
+.custom-card
+{
+  
+	width: 800px;
+}
+.left
+{
+	margin-left: 27px;
+}
+#sticky-footer
+{
+	width: 100%;
+    position: fixed;
+    bottom: 0
+}
+.create_b
+{
+	position: fixed;
+    top: 20%;
+    
+    right: 7%;
+}
