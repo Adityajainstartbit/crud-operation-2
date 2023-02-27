@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
 	end
 	def create
 		@article=Article.new(getting_details)
+		 @article.user=User.first
 		# render plain: @article.inspect
 		 if @article.save
 		 	flash[:notice] = "Article sucessfully created."
